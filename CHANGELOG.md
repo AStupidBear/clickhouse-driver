@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## [0.2.4] - Unreleased
+### Added
+- ``dict`` and ``namedtuple`` cursor factories. Solves issue [#290](https://github.com/mymarilyn/clickhouse-driver/issues/290).
+- Geo types: Point, Ring, Polygon, MultiPolygon. Solves issue [#228](https://github.com/mymarilyn/clickhouse-driver/issues/228).
+- NumPy Tuple type.
+- ``input_format_null_as_default`` option for NULL insert into not NULL columns. Solves issue [#312](https://github.com/mymarilyn/clickhouse-driver/issues/312).
+
+### Fixed
+- Decimal precision check on INSERT. Solves issue [#289](https://github.com/mymarilyn/clickhouse-driver/issues/289). Pull request [#295](https://github.com/mymarilyn/clickhouse-driver/pull/295) by [joelynch](https://github.com/joelynch).
+
+### Changed
+- Protocol version bumped to 54453.
+
 ## [0.2.3] - 2022-02-07
 ### Added
 - `tzlocal`>=4.0 support. Pull request [#263](https://github.com/mymarilyn/clickhouse-driver/pull/263) by [azat](https://github.com/azat).
@@ -382,7 +395,8 @@
 - Date/DateTime types.
 - String types.
 
-[Unreleased]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.3...HEAD
+[Unreleased]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.4...HEAD
+[0.2.4]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.3...0.2.4
 [0.2.3]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.2...0.2.3
 [0.2.2]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.1...0.2.2
 [0.2.1]: https://github.com/mymarilyn/clickhouse-driver/compare/0.2.0...0.2.1
